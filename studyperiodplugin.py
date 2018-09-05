@@ -36,7 +36,7 @@ def main():
 
         #总挂机分钟数
         total_mins = 0
-	err = 0
+	    err = 0
 
         while True:
             reset_mins = random.randint(12,14)
@@ -57,10 +57,10 @@ def main():
                 dialog_box.accept()
                 time.sleep(3)
             except:
-		err += 1
+		        err += 1
             else:
                 total_mins += reset_mins+1
-		print total_mins
+		        print total_mins
 
             #超过240分钟结束循环，因为每天最多有效学时240分钟（4小时）
             if total_mins >= 240 or err >= 2:
